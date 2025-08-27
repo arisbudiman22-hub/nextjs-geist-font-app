@@ -1,0 +1,577 @@
+/**
+ * Admin Styles for MLM Member Plugin
+ */
+
+/* Dashboard Cards */
+.mmp-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.mmp-dashboard-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.mmp-dashboard-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #646970;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.mmp-stat-number {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1d2327;
+    margin: 0;
+    line-height: 1;
+}
+
+.mmp-dashboard-section {
+    margin-top: 30px;
+}
+
+.mmp-quick-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Settings Styles */
+.mmp-settings-container {
+    max-width: 800px;
+}
+
+.mmp-settings-section {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    margin: 20px 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.mmp-settings-section h2 {
+    margin: 0;
+    padding: 15px 20px;
+    border-bottom: 1px solid #c3c4c7;
+    background: #f6f7f7;
+    font-size: 16px;
+}
+
+.mmp-settings-section .form-table {
+    margin: 0;
+}
+
+.mmp-settings-section .form-table th,
+.mmp-settings-section .form-table td {
+    padding: 15px 20px;
+}
+
+/* Bank Details */
+.bank-detail-row {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.bank-detail-row h4 {
+    margin: 0 0 15px 0;
+    color: #23282d;
+}
+
+.remove-bank-detail {
+    color: #a00;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.remove-bank-detail:hover {
+    color: #dc3232;
+}
+
+/* Member List Styles */
+.mmp-member-filters {
+    margin: 20px 0;
+    padding: 10px;
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.mmp-member-filters .alignleft.actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mmp-member-filters input[type="text"],
+.mmp-member-filters select {
+    margin: 0;
+}
+
+/* Status Indicators */
+.mmp-status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.mmp-status-active {
+    background: #00a32a;
+    color: #fff;
+}
+
+.mmp-status-inactive {
+    background: #dba617;
+    color: #fff;
+}
+
+.mmp-status-pending {
+    background: #72aee6;
+    color: #fff;
+}
+
+.mmp-status-free {
+    background: #8c8f94;
+    color: #fff;
+}
+
+/* Form Type Indicators */
+.mmp-form-type {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: #f0f0f1;
+    color: #50575e;
+}
+
+.mmp-form-type-registration {
+    background: #00a32a;
+    color: #fff;
+}
+
+.mmp-form-type-profile {
+    background: #72aee6;
+    color: #fff;
+}
+
+.mmp-form-type-prospect {
+    background: #dba617;
+    color: #fff;
+}
+
+.mmp-form-type-subscribe {
+    background: #8c8f94;
+    color: #fff;
+}
+
+/* Action Buttons */
+.mmp-action-buttons {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.mmp-action-buttons .button {
+    margin: 0;
+}
+
+/* Sorting Indicators */
+.sorting-indicator {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #72aee6;
+}
+
+/* Modal Styles */
+.mmp-modal {
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mmp-modal-content {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.mmp-modal-header {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f6f7f7;
+}
+
+.mmp-modal-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.mmp-modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mmp-modal-close:hover {
+    color: #000;
+}
+
+.mmp-modal-body {
+    padding: 20px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.mmp-modal-footer {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    background: #f6f7f7;
+}
+
+/* Form Builder Styles */
+.mmp-form-builder {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.mmp-form-builder-header {
+    padding: 20px;
+    border-bottom: 1px solid #c3c4c7;
+    background: #f6f7f7;
+}
+
+.mmp-form-builder-content {
+    display: flex;
+    min-height: 500px;
+}
+
+.mmp-form-builder-sidebar {
+    width: 250px;
+    border-right: 1px solid #c3c4c7;
+    padding: 20px;
+    background: #fafafa;
+}
+
+.mmp-form-builder-sidebar h3 {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    color: #23282d;
+}
+
+.mmp-field-types {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mmp-field-type {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    cursor: move;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+.mmp-field-type:hover {
+    background: #f0f0f1;
+    border-color: #8c8f94;
+}
+
+.mmp-field-type .dashicons {
+    font-size: 16px;
+    color: #72aee6;
+}
+
+.mmp-form-builder-main {
+    flex: 1;
+    padding: 20px;
+}
+
+.mmp-form-builder-main h3 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    color: #23282d;
+}
+
+.mmp-form-preview {
+    border: 2px dashed #c3c4c7;
+    border-radius: 4px;
+    min-height: 400px;
+    padding: 20px;
+}
+
+.mmp-form-fields {
+    min-height: 360px;
+}
+
+.mmp-empty-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 360px;
+    color: #8c8f94;
+    font-style: italic;
+}
+
+.mmp-form-field {
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    margin: 10px 0;
+    background: #fff;
+    transition: all 0.2s ease;
+}
+
+.mmp-form-field:hover {
+    border-color: #72aee6;
+    box-shadow: 0 0 0 1px #72aee6;
+}
+
+.mmp-field-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background: #f6f7f7;
+    border-bottom: 1px solid #c3c4c7;
+}
+
+.mmp-field-handle {
+    cursor: move;
+    color: #8c8f94;
+}
+
+.mmp-field-label {
+    flex: 1;
+    font-weight: 600;
+    color: #23282d;
+}
+
+.mmp-field-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.mmp-field-actions .button {
+    padding: 2px 8px;
+    font-size: 11px;
+    height: auto;
+    line-height: 1.4;
+}
+
+.mmp-field-preview {
+    padding: 15px;
+}
+
+.mmp-field-preview label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #23282d;
+}
+
+.mmp-field-preview input,
+.mmp-field-preview textarea,
+.mmp-field-preview select {
+    width: 100%;
+    max-width: 300px;
+}
+
+.mmp-field-preview input[type="radio"],
+.mmp-field-preview input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.mmp-field-placeholder {
+    height: 60px;
+    background: #f0f0f1;
+    border: 2px dashed #c3c4c7;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.mmp-form-builder-settings {
+    padding: 20px;
+    border-top: 1px solid #c3c4c7;
+    background: #f6f7f7;
+}
+
+.mmp-form-builder-settings h3 {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    color: #23282d;
+}
+
+.mmp-form-builder-actions {
+    padding: 20px;
+    border-top: 1px solid #c3c4c7;
+    background: #f6f7f7;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Forms List */
+.mmp-forms-list {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.copy-shortcode {
+    margin-left: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 782px) {
+    .mmp-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mmp-form-builder-content {
+        flex-direction: column;
+    }
+    
+    .mmp-form-builder-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #c3c4c7;
+    }
+    
+    .mmp-field-types {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .mmp-field-type {
+        flex: 1;
+        min-width: 120px;
+    }
+    
+    .mmp-member-filters .alignleft.actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .mmp-member-filters input[type="text"],
+    .mmp-member-filters select {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .mmp-action-buttons {
+        flex-direction: column;
+    }
+    
+    .mmp-action-buttons .button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Loading States */
+.mmp-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.mmp-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #72aee6;
+    border-radius: 50%;
+    animation: mmp-spin 1s linear infinite;
+}
+
+@keyframes mmp-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Success/Error Messages */
+.mmp-message {
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.mmp-message-success {
+    background: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+
+.mmp-message-error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.mmp-message-warning {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.mmp-message-info {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
